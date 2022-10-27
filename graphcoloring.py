@@ -21,7 +21,7 @@ def colorthis(e):
     global color
     color=sort(color)
     #print(color,graph[e])
-    #color[e]=0
+    color[e]=0
     for i in  color.keys():
         if i in graph[e]:
             if(color[i]==color[e]):
