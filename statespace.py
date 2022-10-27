@@ -67,20 +67,27 @@ def move(matrix,final):
                 graph[nextlvl.index(m)].append(nextlvl.index(current))
        
         if final in nextlvl:
-            print("\n*** final configuration achieved at :",nextlvl.index(final)," ***\n")
-            return nextlvl
+            return graph
 
-def printstatespace(nextlvl):
-    print(graph)
-    print(tree)
+def printstatespace(graph):
+    #print(graph)
+    print("\n\n",tree,"\n\n")
     #print(nextlvl)
     t=Tree()
     t.create_node(0,0)
     for k in graph:
         for v in graph[k]:
             t.create_node(v,v,parent=k)
-
     t.show()
+
+def getdepth(graph):
+    deapth={}
+    deapth[0]=0
+    for k in graph:
+        for v in graph[k]:
+            deapth[v]=deapth[k]+1
+
+    return deapth
 '''
     t=Tree()
     t.create_node(0,nextlvl[0])

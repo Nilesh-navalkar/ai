@@ -3,7 +3,7 @@
 color={}
 
 graph={}
-n=int(input("enter the number of states"))
+n=int(input("enter the number of states : "))
 for i in range(0,n):
     state=input("enter the state : ")
     n_line=input("enter the neighbours : ")
@@ -15,15 +15,19 @@ def sort(color):
     color={}
     for i in a:
         color[i[0]]=i[1]
+    return color
 
 def colorthis(e):
-    color[e]=0
-    sort(color)
-    for i in  graph[e]:
-        if(i not in color.keys()):
-            a=0
-        elif(color[i]==color[e]):
-            color[e]=color[e]+1
+    global color
+    color=sort(color)
+    #print(color,graph[e])
+    #color[e]=0
+    for i in  color.keys():
+        if i in graph[e]:
+            if(color[i]==color[e]):
+                #print(color,(e,i),color[e],color[i])
+                color[e]=color[e]+1
+            
 
 def colornode(graph):
     for e in graph.keys():
