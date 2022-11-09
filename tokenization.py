@@ -8,14 +8,15 @@ def tokenizationWords(para):
 def tokenizationSentence(para):
     print("tokenization by sentence: ")
     l=para.split(".")
-    l.remove("")
+    if "" in l:
+        l.remove("")
     print(l)
 
 def tokenizationPara(para):
     print("tokenization by para : ")
     l=para.split("\n")
     l.remove("")
-    print(l)
+    print(list(set(l)))
 
 #tokenizationWords(doc.read())
 #tokenizationSentence(doc.read())

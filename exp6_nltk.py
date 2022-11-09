@@ -36,6 +36,6 @@ def lemminization(tokenized_word):
 
 
 words = ['happy', 'happier', 'happiest', 'happiness', 'breathing','fairly','eating']
-#stemming(words)
+stemming(words)
 txt="Life will always have problems and pressures."
-lemminization(txt.split())
+#lemminization(txt.split())

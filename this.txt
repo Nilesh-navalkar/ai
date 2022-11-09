@@ -1,8 +1,4 @@
-Face Recognition: A Literature Review
-SEE PROFILE
-2006
-When face detectors find a face in frontal view, a Support Vector Machine based multi-class classifier is activated for face recognition
-Abstract
+
 The task of face recognition has been actively researched in recent years. This paper provides an up-to-date review of major human face recognition research. We first present an overview of face recognition and its applications. Then, a literature review of the most recent face recognition techniques is presented. Description and limitations of face databases which are used to test the performance of these face recognition algorithms are given. A brief summary of the face recognition vendor test (FRVT) 2002, a large scale evaluation of automatic face recognition technology, and its conclusions are also given. Finally, we give a summary of the research results.
 Scholarcy Synopsis
 In the world of machine learning, deep learning has made its significant impact in certain tasks which seemed impossible a few years ago such as lip reading and speech recognition.
@@ -19,57 +15,3 @@ The researchers recommend that a CNN has the potential to acquire a speaker inde
 Future work is to investigate the possibility of building a speaker-independent phoneme recognition model by preparing a larger dataset.
 
 
-Findings
-In [39], it was reported that PDBNN face recognizer had the capability of recognizing up to 200 people and could achieve up to 96% correct recognition rate in approximately 1 second
-The LEM approach is also less sensitive to pose variations than the eigenface method but more sensitive to large facial expression changes
-The minimum error of SVM is 8.79%, which is much better than the 15.14% of NCC
-Test results on four video sequences are presented, among them, detection rate is above 95%, recognition accuracy is above 90%, and the full detection and recognition speed is up to 4 frames/second on a PentiumII300 PC
-The proposed method showed the best performance and significant reduction of error rate (44.7%) from the second best performing system– convolutional NN
-2) Without the lighting variations, FRCM achieves 97.8% accuracy
-Scholarcy Highlights
-•	FACE recognition is an spanning numerous fields important research and disciplines
-•	The symmetrical property of face images is employed to simplify the complexity of the modeling
-•	When face detectors find a face in frontal view, a Support Vector Machine based multi-class classifier is activated for face recognition
-•	The error can be validly removed by using Support Vector Machine (SVM) ensemble, where each SVM acts as an independent membership/ non-membership classifier and several SVMs are combined in a plurality voting scheme that chooses the classification made by more than half of SVMs
-•	The SVM ensemble is applied to authenticate an input face image whether it is included in the membership group or not
-•	The Line Edge Map (LEM) approach is less sensitive to pose variations than the eigenface method but more sensitive to large facial expression changes
-•	(1) limited number of people (2) illumination conditions are not consistent from image to image. (3) the images are not annotated for different facial expressions, head rotation, or lighting conditions
-Scholarcy Summary
-Introduction
-FACE recognition is an spanning numerous fields important research and disciplines. This problem because face recognition, in additional to having numerous practical applications such as bankcard identification, access control, Mug shots searching, security monitoring, and surveillance system, is a fundamental human behaviour that is essential for effective communications and interactions among people.A formal method of classifying faces was first proposed in [1].
-FACE recognition is an spanning numerous fields important research and disciplines.
-This problem because face recognition, in additional to having numerous practical applications such as bankcard identification, access control, Mug shots searching, security monitoring, and surveillance system, is a fundamental human behaviour that is essential for effective communications and interactions among people.
-The author proposed collecting facial profiles as curves, finding their norm, and classifying other profiles by their deviations from the norm.
-This classification is multi-modal, i.e. resulting in a vector of independent measures that could be compared with other vectors in a database.
-The rapid development of face recognition is due to a combination of factors: active development of algorithms, the availability of a large databases of facial images, and a method for evaluating the performance of face recognition algorithms
-Methods
-SVM is a learning technique that is considered an effective method for general purpose pattern recognition because of its high generalization performance without the need to add other knowledge [65].
-The training techniques used here are based on the principle of Structure Risk Minimization (SRM), which states that better generalization capabilities are achieved through a minimization of the bound on the generalization error.
-This learning technique is just equivalent to solving a linearly constrained Quadratic Programming (QP) problem.
-Reference [73] combine SVM and Independent Component Analysis (ICA) techniques for the face recognition problem.
-Results
-A Support Vector Machine based multi-view face detection and recognition framework is described in [74].
-The estimation of head pose, which is achieved by using the Support Vector Regression technique, provides crucial information for choosing the appropriate face detector.
-This helps to improve the accuracy and reduce the computation in multi-view face detection compared to other methods.
-When face detectors find a face in frontal view, a Support Vector Machine based multi-class classifier is activated for face recognition.
-Experiment results showed that the SVM ensemble has the ability to recognize non-membership and a stable robustness to cope with the variations of either different group sizes or different group members.
-The correct authentication rate is almost constant in the range from 97% to 98.5% without regard to the variation of members in the group in the same group size
-Conclusion
-Limitation contains face images of 40 persons, with 10 images of each.
-The 10 images were shot at different times and with different lighting conditions, but always against a dark background.
-(1) limited number of people (2) illumination conditions are not consistent from image to image.
-(3) the images are not annotated for different facial expressions, head rotation, or lighting conditions.
-Includes frontal color images of 125 different faces.
-Each face was photographed 16 times, using 1 of 4 different illuminants in combination with 1 of 4 different camera calibrations.
-The images were captured under dark room conditions, and a gray screen was placed behind the participant.
-The spectral sensitivities of the R, G and B channels of the camera, and the spectral power of the four illuminants were recorded over the same spectral range
-Builds on previous work
-Reference [30] proposed a new method to compute the covariance matrix using three images each was taken in different lighting conditions to account for arbitrary illumination effects, if the object is Lambertian. Reference [31] extended their early work on eigenface to eigenfeatures corresponding to face components, such as eyes, nose, and mouth
-The proposed system is evaluated on a large database of 295 people obtaining highly competitive results: an equal rate of 1% for verification and a rank-one error rate of 2% for recognition. In [72], a novel structure is proposed to tackle multi-class classification problem for a K-class classification test, an array of K optimal pairwise coupling classifier (O-PWC) is constructed, each of which is the most reliable and optimal for the corresponding class in the sense of cross entropy of square error
-Differs from previous work
-The ARENA method in [7] simply stores all training and matches each one against the task image. As far we can tell, current methods that employ models do not use exemplars, and vice versa
-Edge information is a useful object representation feature that is insensitive to illumination changes to certain extent. Though the edge map is widely used in various pattern recognition fields, it has been neglected in face recognition except in recent work reported in [60]
-Contributions
-In summary, geometrical feature matching based on precisely measured distances between features may be most useful for finding possible matches in a large database such as a Mug shot album. However, it will be dependent on the accuracy of the feature location algorithms. Current automated face feature location algorithms do not provide a high degree of accuracy and require considerable computational time.
-Limitations
-One problem with the proposed authentication method is that the correct classification rate for the membership is highly degraded when the size of members is small (<20), due to the limited training data set. Nevertheless, simulation results show that the authentication performance of the proposed method can keep stable for the member group with a size of less than 50 persons.
